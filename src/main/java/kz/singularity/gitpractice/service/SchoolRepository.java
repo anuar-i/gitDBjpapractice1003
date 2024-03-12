@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SchoolRepository extends JpaRepository <School, Long>{
-  String findSchoolsBySchoolName(String schoolName);
+  School findSchoolsBySchoolName(String schoolName);
   @Query("select s.studentQuantity from School s where s.id = :id")
   int findAllByStudentQuantity(Long id);
 
