@@ -1,6 +1,6 @@
-package kz.singularity.gitpractice.service;
+package kz.singularity.gitdbpractice.service;
 
-import kz.singularity.gitpractice.entity.School;
+import kz.singularity.gitdbpractice.entity.School;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

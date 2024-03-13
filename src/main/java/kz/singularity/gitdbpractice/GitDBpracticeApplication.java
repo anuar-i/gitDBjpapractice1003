@@ -1,11 +1,11 @@
-package kz.singularity.gitpractice;
+package kz.singularity.gitdbpractice;
 
 import java.util.ArrayList;
 import java.util.List;
-import kz.singularity.gitpractice.entity.School;
-import kz.singularity.gitpractice.entity.Student;
-import kz.singularity.gitpractice.service.SchoolRepository;
-import kz.singularity.gitpractice.service.StudentRepository;
+import kz.singularity.gitdbpractice.entity.School;
+import kz.singularity.gitdbpractice.entity.Student;
+import kz.singularity.gitdbpractice.service.SchoolRepository;
+import kz.singularity.gitdbpractice.service.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,13 +13,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-public class GitpracticeApplication implements CommandLineRunner {
+public class GitDBpracticeApplication implements CommandLineRunner {
 
   private final SchoolRepository schoolRepository;
   private final StudentRepository studentRepository;
 
   public static void main(String[] args) {
-    SpringApplication.run(GitpracticeApplication.class, args);
+    SpringApplication.run(GitDBpracticeApplication.class, args);
   }
 
   @Override

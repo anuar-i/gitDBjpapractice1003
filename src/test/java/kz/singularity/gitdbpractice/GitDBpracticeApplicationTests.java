@@ -1,10 +1,10 @@
-package kz.singularity.gitpractice;
+package kz.singularity.gitdbpractice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GitpracticeApplicationTests {
+class GitDBpracticeApplicationTests {
 
   @Test
   void contextLoads() {

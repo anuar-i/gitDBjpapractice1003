@@ -1,4 +1,4 @@
-package kz.singularity.gitpractice.entity;
+package kz.singularity.gitdbpractice.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,17 +13,21 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "school")
+@Table(name = "student")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Data
-public class School {
+public class Student {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-  private String schoolName;
-  private int studentQuantity;
+  Long id;
+  private String firstName;
+  private String surName;
+  private String email;
+  private int grade;
+  private int age;
+
 }
